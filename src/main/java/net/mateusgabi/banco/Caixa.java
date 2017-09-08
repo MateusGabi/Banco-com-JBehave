@@ -4,6 +4,8 @@
  * @see http://www.javaprogressivo.net/2012/10/Aplicativo-Simulacao-simples-de-conta-bancaria-caixa-eletronico-em-Java.html
  */
 
+package net.mateusgabi.banco;
+
 
 import java.util.Scanner;
 import java.util.Random;
