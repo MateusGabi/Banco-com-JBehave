@@ -1,6 +1,6 @@
 #org.jbehave.core.embedder.StoryManager
-#Sat Sep 09 16:08:58 AMT 2017
-stories/ingest_test.story=0
+#Sat Sep 09 17:23:36 AMT 2017
+stories/criar_conta.story=0
 threads=1
 total=0
 threadAverage=0
