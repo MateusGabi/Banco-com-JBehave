@@ -1,7 +1,8 @@
 #org.jbehave.core.embedder.StoryManager
-#Sat Sep 09 21:38:18 AMT 2017
+#Sun Sep 10 10:53:35 AMT 2017
 stories/visualizar_extrato.story=0
 stories/criar_conta.story=0
 threads=1
 total=0
 threadAverage=0
+stories/sacar.story=0

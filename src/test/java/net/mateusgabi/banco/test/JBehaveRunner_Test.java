@@ -48,6 +48,7 @@ public class JBehaveRunner_Test extends JUnitStories {
 
         stepFileList.add(new CriacaoDeContaSteps());
         stepFileList.add(new VisualizarExtratoSteps());
+        stepFileList.add(new SacarSteps());
 
 
         return new InstanceStepsFactory(configuration(), stepFileList);

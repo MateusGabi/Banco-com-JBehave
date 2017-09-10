@@ -1,0 +1,41 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/sacar.story</div>
+<div class="scenario">
+<h2>Scenario: CT-010 Principal - Sacar</h2>
+<div class="step successful">Given um cliente com saldo <span class="step parameter">150.00</span></div>
+<div class="step successful">When quer realizar saque de <span class="step parameter">30.00</span></div>
+<div class="step successful">Then sistema realiza saque</div>
+</div>
+<div class="scenario">
+<h2>Scenario: CT-011 Sacar $0</h2>
+<div class="step successful">Given um cliente com saldo <span class="step parameter">150.00</span></div>
+<div class="step successful">When quer realizar saque de <span class="step parameter">0.00</span></div>
+<div class="step failed">Then sistema n&atilde;o realiza saque <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: CT-012 Sacar $-10.00</h2>
+<div class="step successful">Given um cliente com saldo <span class="step parameter">150.00</span></div>
+<div class="step successful">When quer realizar saque de <span class="step parameter">-10.00</span></div>
+<div class="step failed">Then sistema n&atilde;o realiza saque <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: CT-013 Sacar letra</h2>
+<div class="step successful">Given um cliente com saldo <span class="step parameter">150.00</span></div>
+<div class="step successful">When quer realizar saque de <span class="step parameter">a</span></div>
+<div class="step successful">Then sistema n&atilde;o realiza saque</div>
+</div>
+<div class="scenario">
+<h2>Scenario: CT-014 Sacar maior que saldo</h2>
+<div class="step successful">Given um cliente com saldo <span class="step parameter">150.00</span></div>
+<div class="step successful">When quer realizar saque de <span class="step parameter">200.00</span></div>
+<div class="step failed">Then sistema n&atilde;o realiza saque <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: CT-015 Sacar com limite atingido</h2>
+<div class="step successful">Given um cliente com saldo <span class="step parameter">150.00</span></div>
+<div class="step successful">When quer realizar saque de <span class="step parameter">200.00</span></div>
+<div class="step successful">And limite atingido? <span class="step parameter">yes</span></div>
+<div class="step failed">Then sistema n&atilde;o realiza saque <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError</span></div>
+</div>
+</div>
