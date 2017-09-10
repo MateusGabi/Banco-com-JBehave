@@ -1,37 +1,34 @@
 <html>
 <head>
-<title>AfterStories</title>
+<title>stories.visualizar_extrato</title>
 <style type="text/css" media="all">
 @import url( "./style/jbehave-core.css" );
 </style>
 </head>
 <body>
-  
-<script type="syntaxhighlighter" class="brush: plain"><![CDATA[
-#org.jbehave.core.reporters.PostStoryStatisticsCollector
-#Sat Sep 09 21:38:18 AMT 2017
-notAllowed=0
-examples=0
-scenariosNotAllowed=0
-pending=0
-stepsPending=0
-scenariosSuccessful=0
-stepsNotPerformed=0
-givenStoryScenarios=0
-givenStoryScenariosFailed=0
-stepsFailed=0
-scenarios=0
-givenStories=0
-stepsSuccessful=0
-steps=0
-givenStoryScenariosPending=0
-scenariosPending=0
-stepsIgnorable=0
-givenStoryScenariosNotAllowed=0
-scenariosFailed=0
-givenStoryScenariosSuccessful=0
+<div class="story">
+<h1></h1>
+<div class="path">stories/visualizar_extrato.story</div>
+<div class="scenario">
+<h2>Scenario: CT-007 principal</h2>
+<div class="step successful">Given a cliente mock</div>
+<div class="step successful">When digita <span class="step parameter">1</span></div>
+<div class="step successful">Then mostra seu extrato</div>
+</div>
+<div class="scenario">
+<h2>Scenario: CT-008 entrada inv&aacute;lida (5)</h2>
+<div class="step successful">Given a cliente mock</div>
+<div class="step successful">When digita <span class="step parameter">5</span></div>
+<div class="step successful">Then mostra erro</div>
+</div>
+<div class="scenario">
+<h2>Scenario: CT-009 entrada inv&aacute;lida (a)</h2>
+<div class="step successful">Given a cliente mock</div>
+<div class="step successful">When digita <span class="step parameter">a</span></div>
+<div class="step successful">Then mostra erro</div>
+</div>
+</div>
 
-]]></script>
 </body>
 <!--  SyntaxHighlighter resources:  should be included at end of body -->
 <link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>

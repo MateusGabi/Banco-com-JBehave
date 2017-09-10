@@ -1,9 +1,11 @@
 package net.mateusgabi.banco.test;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.jbehave.core.annotations.BeforeStories;
 import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.configuration.MostUsefulConfiguration;
 import org.jbehave.core.io.CodeLocations;
@@ -15,7 +17,7 @@ import org.jbehave.core.reporters.StoryReporterBuilder;
 import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.InstanceStepsFactory;
 import org.jbehave.core.steps.Steps;
-
+import org.junit.Before;
 
 
 /**
@@ -45,6 +47,7 @@ public class JBehaveRunner_Test extends JUnitStories {
 
 
         stepFileList.add(new CriacaoDeContaSteps());
+        stepFileList.add(new VisualizarExtratoSteps());
 
 
         return new InstanceStepsFactory(configuration(), stepFileList);
