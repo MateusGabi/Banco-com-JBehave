@@ -1,0 +1,28 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/depositar.story</div>
+<div class="scenario">
+<h2>Scenario: CT-016 (Principal) Dep&oacute;sito</h2>
+<div class="step successful">Given uma conta qualquer</div>
+<div class="step successful">When quer depositar <span class="step parameter">20.00</span> reais</div>
+<div class="step successful">Then dep&oacute;sito &eacute; realizado</div>
+</div>
+<div class="scenario">
+<h2>Scenario: CT-017 Dep&oacute;sito de 0 reais</h2>
+<div class="step successful">Given uma conta qualquer</div>
+<div class="step successful">When quer depositar <span class="step parameter">0.00</span> reais</div>
+<div class="step failed">Then dep&oacute;sito n&atilde;o &eacute; realizado <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: CT-018 Dep&oacute;sito negativo</h2>
+<div class="step successful">Given uma conta qualquer</div>
+<div class="step successful">When quer depositar <span class="step parameter">-20.00</span> reais</div>
+<div class="step failed">Then dep&oacute;sito n&atilde;o &eacute; realizado <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: CT-019 Dep&oacute;sito de letra</h2>
+<div class="step successful">Given uma conta qualquer</div>
+<div class="step successful">When quer depositar <span class="step parameter">a</span> reais</div>
+<div class="step failed">Then dep&oacute;sito n&atilde;o &eacute; realizado <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError</span></div>
+</div>
+</div>
