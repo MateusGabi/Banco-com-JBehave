@@ -19,19 +19,19 @@
 <h2>Scenario: CT-002 - cria&ccedil;&atilde;o de conta com nome invalido</h2>
 <div class="step successful">Given a cliente chamado <span class="step parameter">a,123%</span></div>
 <div class="step successful">When quero criar conta com saldo <span class="step parameter">150.0</span></div>
-<div class="step failed">Then n&atilde;o cria conta, pois nome invalido <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError: expected null, but was:&lt;net.mateusgabi.banco.Conta@3eda1283&gt;</span></div>
+<div class="step failed">Then n&atilde;o cria conta, pois nome invalido <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError: expected null, but was:&lt;net.mateusgabi.banco.Conta@413b22b4&gt;</span></div>
 </div>
 <div class="scenario">
 <h2>Scenario: CT-003 - cria&ccedil;&atilde;o de conta com saldo inv&aacute;lido (menor que zero)</h2>
 <div class="step successful">Given a cliente chamado <span class="step parameter">Mateus</span></div>
 <div class="step successful">When quero criar conta com saldo <span class="step parameter">-150.0</span></div>
-<div class="step failed">Then n&atilde;o cria conta, saldo inv&aacute;lido <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError: expected null, but was:&lt;net.mateusgabi.banco.Conta@21cca70&gt;</span></div>
+<div class="step failed">Then n&atilde;o cria conta, saldo inv&aacute;lido <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError: expected null, but was:&lt;net.mateusgabi.banco.Conta@186254e7&gt;</span></div>
 </div>
 <div class="scenario">
 <h2>Scenario: CT-004 - cria&ccedil;&atilde;o de conta com nome e saldo inv&aacute;lido (menor que zero)</h2>
 <div class="step successful">Given a cliente chamado <span class="step parameter">a,123%</span></div>
 <div class="step successful">When quero criar conta com saldo <span class="step parameter">-150.0</span></div>
-<div class="step failed">Then n&atilde;o cria conta, nome e saldo inv&aacute;lido <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError: expected null, but was:&lt;net.mateusgabi.banco.Conta@5317625a&gt;</span></div>
+<div class="step failed">Then n&atilde;o cria conta, nome e saldo inv&aacute;lido <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError: expected null, but was:&lt;net.mateusgabi.banco.Conta@58fdc4d3&gt;</span></div>
 </div>
 <div class="scenario">
 <h2>Scenario: CT-005 - cria&ccedil;&atilde;o de conta com saldo inv&aacute;lido (letra)</h2>
